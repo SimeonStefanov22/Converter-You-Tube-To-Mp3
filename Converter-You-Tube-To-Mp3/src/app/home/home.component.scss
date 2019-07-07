@@ -1,0 +1,92 @@
+.container{
+  height: 100vh;
+  display: grid;
+  grid-auto-rows: 1fr 2fr;
+
+
+  header{
+    background: rgb(254, 95, 53);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+
+    h1{
+      color: rgb(254, 213, 35);
+    }
+
+    .info{
+      font-size: 1.5rem;
+      padding: 0.4em;
+      margin-bottom: 1em;
+      border: none;
+      background: rgb(93, 92, 97);
+      color: rgb(254, 213, 35);
+      border-radius: 50%;
+    }
+    .info:hover{
+      cursor: pointer;
+      color: rgb(254, 95, 53);
+      background: rgb(254, 213, 35);
+    }
+
+  }
+
+  main{
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+
+
+
+    form{
+
+      input{
+        font-size: 1.5rem;
+        padding: 0.4em;
+        border: none;
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+      }
+      .buttonConvert{
+        font-size: 1.5rem;
+        padding: 0.4em;
+        border: none;
+        background: rgb(93, 92, 97);
+        color: rgb(254, 213, 35);
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+      }
+      .buttonConvert:hover{
+        cursor: pointer;
+        color: rgb(254, 95, 53);
+        background: rgb(254, 213, 35);
+      }
+    }
+
+    .linkDownload{
+      display: flex;
+      justify-content: center;
+      border: 15px;
+
+
+      a{
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-size: 1.5rem;
+        background: rgb(93, 92, 97);
+        color: rgb(254, 213, 35);
+        padding: 0.4em;
+        border-radius: 15px;
+      }
+      a:hover{
+        cursor: pointer;
+        color: rgb(254, 95, 53);
+        background: rgb(254, 213, 35);
+      }
+    }
+  }
+}
