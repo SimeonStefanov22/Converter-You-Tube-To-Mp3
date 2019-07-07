@@ -1,13 +1,7 @@
 <div class="container">
   <header>
     <h1>YouTube to Mp3</h1>
-    <a routerLink="/info"
-       routerLinkActive="active"
-       [routerLinkActiveOptions]="{exact:true}"
-       replaceUrl="replaceUrl"
-    >
-      Info
-    </a>
+
   </header>
 
   <main>
@@ -16,10 +10,20 @@
       <button class="buttonConvert" (click)="convertVideo(formValue.value)">Convert</button>
     </form>
 
-
-
     <div *ngIf="link" class="linkDownload">
       <a href="{{link}}">Load Mp3</a>
+    </div>
+
+    <div *ngIf="!link" class="containerButtonInfo">
+      <a class="buttonInfo"
+         routerLink="/info"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{exact:true}"
+         replaceUrl="replaceUrl"
+
+      >
+        Info
+      </a>
     </div>
   </main>
 

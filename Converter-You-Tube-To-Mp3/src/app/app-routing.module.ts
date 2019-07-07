@@ -7,6 +7,7 @@ import {InfoComponent} from "./info/info.component";
 
 const routes: Routes = [
 
+  {path: "", component: HomeComponent},
   {path: "info", component: InfoComponent, pathMatch: "full"}
 
 ];

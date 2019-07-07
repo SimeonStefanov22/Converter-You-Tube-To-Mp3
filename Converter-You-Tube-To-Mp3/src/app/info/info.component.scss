@@ -1,0 +1,27 @@
+.info{
+
+  font-family: 'Lato', sans-serif;
+  margin: 2rem 8rem 0 8rem;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 50%;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid rgb(255, 255, 255);
+
+  .buttonHome{
+    font-size: 1.5rem;
+    padding: 0.4em 1em 0.4em 1em;
+    border: none;
+    background: rgb(93, 92, 97);
+    color: rgb(255, 255, 255);
+    border-radius: 15px;
+    text-decoration: none;
+    text-align: center;
+  }
+  .buttonHome:hover{
+    cursor: pointer;
+    color: rgb(254, 95, 53);
+    background: rgb(254, 213, 35);
+  }
+}

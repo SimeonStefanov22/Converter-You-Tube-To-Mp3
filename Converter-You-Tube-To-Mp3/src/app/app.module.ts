@@ -11,14 +11,14 @@ import {FormsModule} from "@angular/forms";
 import {ConvertService} from "./services/convert.service";
 import {RouterModule} from "@angular/router";
 import { InfoComponent } from './info/info.component';
-import { MainComponent } from './main/main.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    InfoComponent,
-    MainComponent
+    InfoComponent
+
   ],
   imports: [
     BrowserModule,
